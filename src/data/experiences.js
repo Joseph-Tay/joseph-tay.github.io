@@ -45,7 +45,7 @@ export const experiences = [
     title: "Manufacturing Engineer II",
     company: "Medtronic",
     website: "https://www.medtronic.com/",
-    logo: "/images/MDT_logo.png",
+    logo: "/images/MDT_Logo.png",
     icon: "/images/MDT_icon.png",
     period: "Jan 2018 - July 2021",
     location: "Structural Heart | Manufacturing Engineering",
