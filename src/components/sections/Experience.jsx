@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { SectionWrapper } from '../common/SectionWrapper';
 import { ChevronButton } from '../common/ChevronButton';
 import { TechTag } from '../common/TechTag';
