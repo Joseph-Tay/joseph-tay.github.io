@@ -173,19 +173,21 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
       setExpandedJob(null);
     } else {
       setExpandedJob(jobId);
-      // Scroll to top of the expanded card after a short delay to allow animation to start
-      setTimeout(() => {
-        const expandedCard = document.querySelector(`[data-job-id="${jobId}"]`);
-        if (expandedCard) {
-          const cardRect = expandedCard.getBoundingClientRect();
-          const scrollTop = window.pageYOffset + cardRect.top - 80; // 80px padding from top
-          
-          window.scrollTo({
-            top: scrollTop,
-            behavior: 'smooth'
-          });
-        }
-      }, 100);
+      // Only scroll on desktop, not mobile
+      if (window.innerWidth >= 768) { // md breakpoint
+        setTimeout(() => {
+          const expandedCard = document.querySelector(`[data-job-id="${jobId}"]`);
+          if (expandedCard) {
+            const cardRect = expandedCard.getBoundingClientRect();
+            const scrollTop = window.pageYOffset + cardRect.top - 80; // 80px padding from top
+            
+            window.scrollTo({
+              top: scrollTop,
+              behavior: 'smooth'
+            });
+          }
+        }, 100);
+      }
     }
   };
 
@@ -254,6 +256,7 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
         {[...sortedExperiences].reverse().map((job) => (
           <div
             key={job.id}
+            data-job-id={job.id}
             className={`transition-all duration-500 p-4 rounded-xl border cursor-pointer transform ${
               expandedJob === job.id 
                 ? 'bg-white shadow-2xl border-2 border-blue-300 scale-102' 
@@ -262,7 +265,18 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
             onClick={() => handleCardClick(job.id)}
           >
             <h3 className="text-lg font-medium text-gray-900 mb-1">{job.title}</h3>
-            <p className="text-blue-600 font-medium">{job.company}</p>
+            <div className="flex items-center gap-2 mb-2">
+              {job.icon && (
+                <div className="w-5 h-5 rounded-full overflow-hidden flex-shrink-0">
+                  <img 
+                    src={job.icon} 
+                    alt={`${job.company} icon`}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              )}
+              <p className="text-blue-600 font-medium">{job.company}</p>
+            </div>
             <p className="text-xs text-gray-500 mb-2">{job.location}</p>
             <p className="text-sm text-gray-600">{job.period}</p>
             
@@ -275,7 +289,7 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
               <h4 className="font-medium text-gray-900 mb-2 text-sm">Core Responsibilities:</h4>
               <ul className="space-y-1 mb-4">
                 {job.achievements.map((achievement, i) => (
-                  <li key={i} className="text-gray-600 text-xs">• {achievement}</li>
+                  <li key={i} className="text-gray-600 text-xs" dangerouslySetInnerHTML={{ __html: `• ${achievement}` }} />
                 ))}
               </ul>
               <div className="flex flex-wrap gap-1">
