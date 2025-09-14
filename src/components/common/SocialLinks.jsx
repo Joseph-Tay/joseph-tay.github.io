@@ -12,10 +12,10 @@ export const SocialLinks = ({ email, github, linkedin, size = "default", variant
       <a href={`mailto:${email}`} className={buttonStyles}>
         <Mail className={`${iconSize} ${variant === "outline" ? "text-blue-600 group-hover:text-blue-700" : ""}`} />
       </a>
-      <a href={github} className={buttonStyles}>
+      <a href={github} target="_blank" rel="noopener noreferrer" className={buttonStyles}>
         <Github className={`${iconSize} ${variant === "outline" ? "text-blue-700 group-hover:text-blue-800" : ""}`} />
       </a>
-      <a href={linkedin} className={buttonStyles}>
+      <a href={linkedin} target="_blank" rel="noopener noreferrer" className={buttonStyles}>
         <Linkedin className={`${iconSize} ${variant === "outline" ? "text-blue-800 group-hover:text-blue-900" : ""}`} />
       </a>
     </div>
