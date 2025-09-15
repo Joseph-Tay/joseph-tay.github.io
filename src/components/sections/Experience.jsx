@@ -173,8 +173,11 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
       setExpandedJob(null);
     } else {
       setExpandedJob(jobId);
-      // Only scroll on desktop, not mobile
-      if (window.innerWidth >= 768) { // md breakpoint
+      // Only scroll on desktop - check if desktop cards are visible
+      const desktopView = document.querySelector('.hidden.md\\:block');
+      const isDesktopVisible = desktopView && window.getComputedStyle(desktopView).display !== 'none';
+      
+      if (isDesktopVisible) {
         setTimeout(() => {
           const expandedCard = document.querySelector(`[data-job-id="${jobId}"]`);
           if (expandedCard) {
