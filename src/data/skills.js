@@ -13,6 +13,6 @@ export const skills = [
   },
   { 
     category: "PM Frameworks & Methodologies", 
-    items: ["Lean Six Sigma", "Program Management", "Quality Management Systems", "FDA QSR", "Kanban", "5S Methodology", "Value Stream Mapping", "Process Optimization", "Cross-functional Team Leadership", "Operations Research"] 
+    items: ["Lean Six Sigma", "Program Management", "Quality Management Systems", "FDA QSR", "Kanban", "5S Methodology", "Value Stream Mapping", "Process Optimization", "Cross-functional Leadership", "Operations Research"] 
   }
 ];

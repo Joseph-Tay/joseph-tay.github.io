@@ -295,6 +295,16 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
                   <li key={i} className="text-gray-600 text-xs" dangerouslySetInnerHTML={{ __html: `• ${achievement}` }} />
                 ))}
               </ul>
+              {job.projects && job.projects.map((project, index) => (
+                <div key={index} className="mb-4">
+                  <h4 className="font-medium text-gray-900 mb-2 text-sm">{project.title}</h4>
+                  <ul className="space-y-1 mb-2">
+                    {project.details.map((detail, i) => (
+                      <li key={i} className="text-gray-600 text-xs ml-2" dangerouslySetInnerHTML={{ __html: `• ${detail}` }} />
+                    ))}
+                  </ul>
+                </div>
+              ))}
               <div className="flex flex-wrap gap-1">
                 {job.technologies.map((tech, i) => (
                   <TechTag key={i} tech={tech} />

@@ -31,7 +31,7 @@ export const experiences = [
     icon: "/images/FR_icon.png",
     period: "Mar 2017 - Jan 2018",
     location: "Riverside Packer | Quality Engineering",
-    description: "Managed quality engineering processes for food production facility and led facility startup initiatives.",
+    description: "Developed quality engineering protocols and production standards for food manufacturing facility, coordinating cross-functional teams during facility launch and operations scaling.",
     achievements: [
       "Wrote and maintained company-wide GMPs, SOPs and Quality Control Policies for SQFII and ISO certification",
       "Facilitated launch of new retail program in freshly-acquired facility including layout planning and scalability",
@@ -49,12 +49,12 @@ export const experiences = [
     icon: "/images/MDT_icon.png",
     period: "Jan 2018 - July 2021",
     location: "Structural Heart | Manufacturing Engineering",
-    description: "Led manufacturing engineering initiatives for medical device production, focusing on automation and process optimization.",
+    description: "Drove automation and process improvements across medical device manufacturing operations, leading cross-functional engineering projects to optimize production efficiency.",
     achievements: [
       "Developed new tooling prototype process using 3D-printing, improving prototype iteration speed by 85%",
       "Led cross-functional team for heart valve assembly yield optimization, improving product yield by 10%",
       "Generated root-cause analysis reports using statistical techniques like pareto charts and control charts",
-      "Successfully submitted FDA HDE 75-day submission allowing production of new subassembly specifications"
+      "Authored and submitted FDA reports enabling new product specifications"
     ], projects: [
       {
         title: "Electronic Device History Record (e-DHR) Automation Product Development",
@@ -93,14 +93,15 @@ export const experiences = [
     website: "https://www.amazon.com/",
     logo: "/images/AMZ_logo.png",
     icon: "/images/AMZ_icon.png",
-    period: "July 2021 - Present",
+    period: "July 2021 - Jan 2026",
     location: "Network Engineering & Scheduling Tech (NEST)",
-    description: "Leading data science initiatives and product roadmap planning for logistics optimization and forecasting models.",
+    description: "Led data science initiatives and product roadmap planning for logistics optimization and forecasting models.",
     achievements: [
-      "Planned and executed launch of a DeepAR operations research model, delivering ~$20MM in annual defect mitigation",
-      "Designed and managed product roadmap for placement design initiative, generating $11.4MM in annual cost savings",
-      "Facilitated integration of scheduling algorithm from pre-production to production, achieving $7.4M in estimated annual savings",
-      "Spearheaded defect reduction program that reduced defect occurrences by 15% and contributed to $1M in annual cost savings"
+      "Planned and executed launch of a DeepAR operations research model, delivering ~$20MM in annual defect mitigation.",
+      "Designed and managed product roadmap for placement design initiative, generating $11.4MM in annual cost savings.",
+      "Facilitated integration of scheduling algorithm from pre-production to production, achieving $7.4M in estimated annual savings.",
+      "Spearheaded defect reduction program that reduced defect occurrences by 15% and contributed to $1M in annual cost savings.",
+      "Implemented document writing review tool using Amazon internal AI platform driven by Anthropic's Claude Sonnet 4 LLM with detailed prompt engineering."
     ],projects: [
       {
         title: "Volume Forecasting - DeepAR Machine Learning Model Launch",
@@ -121,7 +122,7 @@ export const experiences = [
         ]
       },
       {
-        title: "Scheduling Solver Algorithm Product IntegrationMedical Device M&A Product Integration",
+        title: "Scheduling Solver Algorithm Product Integration",
         details: [
           "Facilitated integration of scheduling algorithm from pre-production to production pilot by documenting launch ramp strategy and leading root cause analyses for remediation efforts.",
           "Generated test plan, stratified sampling lists and results tracking metrics for A/B testing within production environment to measure quantifiable improvements across multiple KPIs as a direct result of solver integration.",
@@ -131,6 +132,31 @@ export const experiences = [
         ]
       }
     ],
-    technologies: ["SQL", "R", "Python", "AWS", "DeepAR", "A/B Testing", "Data Science"]
+    technologies: ["SQL", "R", "Python", "AWS", "DeepAR", "A/B Testing", "Data Science","Machine Learning","Product Management","PRDs","Roadmap planning","E-commerce","Prompt Engineering"]
+  },
+  {
+    id: 5,
+    title: "Sr Technical Product Ops Manager",
+    company: "General Motors",
+    website: "https://www.gm.com/innovation/autonomous-driving",
+    logo: "/images/GM_logo.png",
+    icon: "/images/GM_icon2.png",
+    period: "Feb 2026 - Present",
+    location: "Autonomous Vehicles (Cruise)",
+    description: "Managing technical product operations for GM's Advanced Driver Assistance Systems (ADAS), including Super Cruise development, supplier coordination, and cross-functional program delivery.",
+    achievements: [
+      "Placeholder",
+    ],projects: [
+      {
+        title: "Placeholder Project 1",
+        details: [
+          'Placeholder <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-700 ">Link</a>  ',
+          "Placeholder Project details",
+          
+        ]
+      },
+      
+    ],
+    technologies: ["Placeholders"]
   },
 ];
