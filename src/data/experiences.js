@@ -139,10 +139,10 @@ export const experiences = [
     title: "Sr Technical Product Ops Manager",
     company: "General Motors",
     website: "https://www.gm.com/innovation/autonomous-driving",
-    logo: "/images/GM_logo.png",
+    logo: "/images/GM_Logo.png",
     icon: "/images/GM_icon2.png",
     period: "Feb 2026 - Present",
-    location: "Autonomous Vehicles (Cruise)",
+    location: "Autonomous Vehicle Engineering",
     description: "Managing technical product operations for GM's Advanced Driver Assistance Systems (ADAS), including Super Cruise development, supplier coordination, and cross-functional program delivery.",
     achievements: [
       "Placeholder",
