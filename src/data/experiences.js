@@ -9,7 +9,7 @@ export const experiences = [
     icon: "/images/purdue_icon.png",
     period: "Jan 2016 - Dec 2016",
     location: "Edwardson School of Industrial Engineering | NASA UX Research",
-    description: "Conducted aviation research focused on human factors and pilot performance.",
+    description: "Ran NASA-funded flight simulator experiments with licensed pilots, analyzing how verbal workload affects flight risk and pilot performance.",
     achievements: [
       "Performed Human-Machine Interaction experiments with licensed pilots funded by a NASA research grant.",
       "Experiments were performed using a Tobii Eyetracker, a Probe response unit, and an xPlane-based flight simulator setup.",
@@ -31,7 +31,7 @@ export const experiences = [
     icon: "/images/FR_icon.png",
     period: "Mar 2017 - Jan 2018",
     location: "Riverside Packer | Quality Engineering",
-    description: "Developed quality engineering protocols and production standards for food manufacturing facility, coordinating cross-functional teams during facility launch and operations scaling.",
+    description: "Built quality and production standards for a newly launched food manufacturing facility. Used Lean methods to raise throughput 28% and cut assembly defects 13%.",
     achievements: [
       "Wrote and maintained company-wide GMPs, SOPs and Quality Control Policies for SQFII and ISO certification",
       "Facilitated launch of new retail program in freshly-acquired facility including layout planning and scalability",
@@ -49,7 +49,7 @@ export const experiences = [
     icon: "/images/MDT_icon.png",
     period: "Jan 2018 - July 2021",
     location: "Structural Heart | Manufacturing Engineering",
-    description: "Drove automation and process improvements across medical device manufacturing operations, leading cross-functional engineering projects to optimize production efficiency.",
+    description: "Led automation and process improvement programs for heart valve manufacturing. Cut manual entry of regulated data by 75% and raised output efficiency 26%.",
     achievements: [
       "Developed new tooling prototype process using 3D-printing, improving prototype iteration speed by 85%",
       "Led cross-functional team for heart valve assembly yield optimization, improving product yield by 10%",
@@ -95,7 +95,7 @@ export const experiences = [
     icon: "/images/AMZ_icon.png",
     period: "July 2021 - Jan 2026",
     location: "Network Engineering & Scheduling Tech (NEST)",
-    description: "Led data science initiatives and product roadmap planning for logistics optimization and forecasting models.",
+    description: "Led product strategy for ML forecasting and optimization models across Amazon's Middle Mile logistics network. Launched a DeepAR forecasting model delivering $26M in annual savings.",
     achievements: [
       "Planned and executed launch of a DeepAR operations research model, delivering ~$20MM in annual defect mitigation.",
       "Designed and managed product roadmap for placement design initiative, generating $11.4MM in annual cost savings.",
@@ -142,21 +142,42 @@ export const experiences = [
     logo: "/images/GM_Logo.png",
     icon: "/images/GM_icon2.png",
     period: "Feb 2026 - Present",
-    location: "Autonomous Vehicle Engineering",
-    description: "Managing technical product operations for GM's Advanced Driver Assistance Systems (ADAS), including Super Cruise development, supplier coordination, and cross-functional program delivery.",
+    location: "Autonomous Vehicle Engineering | Data Operations",
+    description: "Own the data products that turn on-road driving footage into training data for GM's autonomous driving and ADAS programs, including Super Cruise. Cut data delivery lead time by 40% while scaling ingestion volume 16x.",
     achievements: [
-      "Placeholder",
+      "Own two data annotation pipelines end to end, turning on-road driving footage into labeled training data for autonomous vehicle machine learning models.",
+      "Take in data requests from ML and engineering teams, translate them into pipeline and annotation requirements, and prioritize the backlog against model training timelines.",
+      "Monitor pipeline health, throughput, and data quality day to day, triaging ingestion errors and quality excursions with engineering so training data ships on time.",
+      "Manage the human-in-the-loop needs of data annotation pipelines, external vendors on request intake, annotation guidelines, and quality feedback.",
+      "Keep ML, engineering, and operations stakeholders aligned on pipeline status, delivery schedules, and upcoming capacity."
     ],projects: [
       {
-        title: "Placeholder Project 1",
+        title: "On-Road Training Data Pipeline Automation Roadmap",
         details: [
-          'Placeholder <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-700 ">Link</a>  ',
-          "Placeholder Project details",
-          
+          "Owned the automation roadmap for two data annotation pipelines that supply annotated on-road driving data to autonomous vehicle model training.",
+          "Found manual handoffs and tracking gaps across ingestion, annotation, and delivery, then prioritized automation work by its effect on lead time and traceability. This cut data output lead time by 40% while ingestion volume grew 16x.",
+          "Authored the long-term product strategy and roadmap for on-road training data pipelines. Leadership approved funding for dedicated engineering headcount to scale automation beyond what the operations team could build.",
+          "Worked with external labeling vendors and internal engineering teams to refine automated intake requirements. Folding vendor feedback into request specs reduced the annotation rework rate by 25%."
         ]
       },
-      
+      {
+        title: "Google Apps Script Automation Toolset",
+        details: [
+          "<b>Human-in-the-Loop Annotation Tool:</b> Built a server-side Apps Script calculator tool that replaced an error-prone offline workflow for human annotators. Annotators now handle manual annotation requirements in one standardized tool, which improves the efficiency and throughput of the human-in-the-loop annotation process and cuts calculation errors.",
+          "<b>Capacity Forecast Calculator:</b> Built a Google Apps Script and Sheets forecasting tool that replaced a manual, multi-input capacity estimation process, cutting quarterly planning time from 2 weeks to about 2 days. The tool forecasts within 10% of actual volume and is now the org's standard tool for quarter-over-quarter planning. It combines annotation throughput rates, planned ingestion volume, the ML model training event schedule, and external vendor capacity to project annotation demand against available capacity. Leadership uses it for headcount requests, operations for annotator staffing, ML and engineering teams to size training event data volume, and program managers to allocate work between in-house annotators and vendors.",
+          "<b>Pipeline Artifact Archival & Versioning:</b> Built a Git repository integration that automatically versions and archives pipeline artifacts. This gives every data request a traceable history and reduces manual tracking of quality excursions.",
+          "<b>Pipeline Notification System:</b> Designed automated notifications that track data requests through the pipeline and alert owners when ingestion errors occur, increasing the share of ingestion errors resolved by 15%.",
+          "Wrote the requirements, built, and maintained all three tools, cutting manual work for operations staff while engineering headcount for long-term automation was being funded."
+        ]
+      },
+      {
+        title: "Pre-Labeled Training Data Pilot",
+        details: [
+          "Piloted and executed an end-to-end data pipeline product from initiation through delivery, processing 125 hours of autonomous driving training footage.",
+          "Defined pipeline requirements, coordinated handoffs between engineering and an external vendor, and tracked delivery milestones, enabling the purchase of pre-labeled training data and opening a new data sourcing channel for model training."
+        ]
+      }
     ],
-    technologies: ["Placeholders"]
+    technologies: ["Google Apps Script", "JavaScript", "Google Sheets", "Git", "Data Pipelines", "Human-in-the-Loop ML", "Data Annotation", "Vendor Management", "Product Roadmapping", "Product Strategy", "Autonomous Vehicles", "ADAS"]
   },
 ];
