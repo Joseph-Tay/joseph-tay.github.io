@@ -29,7 +29,7 @@ export const experiences = [
     website: "https://www.freshrealm.com/",
     logo: "/images/FR_logo.png",
     icon: "/images/FR_icon.png",
-    period: "Mar 2017 - Jan 2018",
+    period: "May 2017 - Jan 2018",
     location: "Riverside Packer | Quality Engineering",
     description: "Built quality and production standards for a newly launched food manufacturing facility. Used Lean methods to raise throughput 28% and cut assembly defects 13%.",
     achievements: [
@@ -47,7 +47,7 @@ export const experiences = [
     website: "https://www.medtronic.com/",
     logo: "/images/MDT_Logo.png",
     icon: "/images/MDT_icon.png",
-    period: "Jan 2018 - July 2021",
+    period: "Jan 2018 - Jun 2021",
     location: "Structural Heart | Manufacturing Engineering",
     description: "Led automation and process improvement programs for heart valve manufacturing. Cut manual entry of regulated data by 75% and raised output efficiency 26%.",
     achievements: [
@@ -62,7 +62,7 @@ export const experiences = [
           "Spearheaded design of product and information flow during implementation of e-DHR initiative using streams in Visio.",
           "Created work breakdown structure with cross-functional team using Microsoft Project and Mindjet MindManager.",
           "Collaborated with Business Intelligence developers to update module routing and goods movement codes within SAP MM and QM production modules to ensure production records adhere to FDA requirements.",
-          "Successfully automated data entry manual requirements by 30%, leading to financial favorability of $90k/year"
+          "Reduced manual entry of regulated data by 75%, saving $100K/year."
         ]
       },
       {
@@ -93,11 +93,11 @@ export const experiences = [
     website: "https://www.amazon.com/",
     logo: "/images/AMZ_logo.png",
     icon: "/images/AMZ_icon.png",
-    period: "July 2021 - Jan 2026",
+    period: "Jun 2021 - Feb 2026",
     location: "Network Engineering & Scheduling Tech (NEST)",
     description: "Led product strategy for ML forecasting and optimization models across Amazon's Middle Mile logistics network. Launched a DeepAR forecasting model delivering $26M in annual savings.",
     achievements: [
-      "Planned and executed launch of a DeepAR operations research model, delivering ~$20MM in annual defect mitigation.",
+      "Planned and executed launch of a DeepAR-based ML forecasting model, delivering $26M in annual savings.",
       "Designed and managed product roadmap for placement design initiative, generating $11.4MM in annual cost savings.",
       "Facilitated integration of scheduling algorithm from pre-production to production, achieving $7.4M in estimated annual savings.",
       "Spearheaded defect reduction program that reduced defect occurrences by 15% and contributed to $1M in annual cost savings.",
@@ -106,8 +106,8 @@ export const experiences = [
       {
         title: "Volume Forecasting - DeepAR Machine Learning Model Launch",
         details: [
-          'Planned and executed launch of a <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-700 ">DeepAR</a>  operations research model, incorporating forward-looking inputs alongside historical time-series data to improve volume accumulation forecasting during periods of volatility. This data-driven solution delivered ~$20MM in annual defect mitigation, driving substantial operational improvements in logistics planning.',
-          "Partnered with engineering teams to refine and enhance product features, identifying configuration gaps in the forecasting model and leading the development of critical features such as automated alarms and guardrails. This collaboration resulted in the successful mitigation of ~$1MM in annual recurring defects by proactively addressing system vulnerabilities.",
+          'Planned and executed launch of a <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-700 ">DeepAR</a>  operations research model, incorporating forward-looking inputs alongside historical time-series data to improve volume accumulation forecasting during periods of volatility. This data-driven solution delivered $26M in annual savings, driving substantial operational improvements in logistics planning.',
+          "Partnered with engineering teams to refine and enhance product features, identifying configuration gaps in the forecasting model and leading the development of critical features such as automated alarms and guardrails. This collaboration resulted in the successful mitigation of $1.3M in annual recurring defects by proactively addressing system vulnerabilities.",
           "Utilized advanced performance tracking methods through SQL and R-scripting to gather actionable insights, iterating on product features to continuously improve accuracy. Applied A/B testing to validate feature adjustments, ensuring data-driven decision-making that maximized model performance and reliability.",
           "Managed a phased rollout strategy to scale deployment of model across the network, collaborating with cross-functional teams to ensure seamless product adoption. By leveraging feedback loops and performance metrics, the model was fine-tuned to meet evolving business needs, optimizing forecasting and delivering sustainable value across the organization."
         ]
