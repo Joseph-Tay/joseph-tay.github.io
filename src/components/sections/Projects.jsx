@@ -49,9 +49,9 @@ const ProjectCard = ({ project, index }) => (
 export const Projects = ({ projects }) => (
   <SectionWrapper 
     id="work" 
-    bgColor="bg-white" 
-    gradientTop="white" 
-    gradientBottom="blue-100"
+    bgColor="bg-blue-100"
+    gradientTop="white"
+    gradientBottom="white"
   >
     <h2 className="text-4xl md:text-5xl font-thin mb-16 tracking-tight text-center text-blue-800">Personal Projects</h2>
     <div className="grid gap-20">
@@ -60,6 +60,6 @@ export const Projects = ({ projects }) => (
       ))}
     </div>
     
-    <ChevronButton targetSection="skills" />
+    <ChevronButton targetSection="contact" />
   </SectionWrapper>
 );

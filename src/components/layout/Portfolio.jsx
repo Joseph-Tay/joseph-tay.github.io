@@ -17,7 +17,7 @@ import { personalInfo } from '../../data/personalInfo';
 import { experiences } from '../../data/experiences';
 import { education } from '../../data/education';
 import { projects } from '../../data/projects';
-import { skills } from '../../data/skills';
+import { skills, certifications } from '../../data/skills';
 
 const Portfolio = () => {
   const { scrollY } = useScroll();
@@ -37,17 +37,17 @@ const Portfolio = () => {
         setExpandedJob={setExpandedJob}
       />
       
-      <Education 
+      <Skills skills={skills} certifications={certifications} />
+
+      <Education
         education={education}
         expandedProject={expandedProject}
         setExpandedProject={setExpandedProject}
         expandedCourse={expandedCourse}
         setExpandedCourse={setExpandedCourse}
       />
-      
+
       <Projects projects={projects} />
-      
-      <Skills skills={skills} />
       
       <Contact personalInfo={personalInfo} />
       

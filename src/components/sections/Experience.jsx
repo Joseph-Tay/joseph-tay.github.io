@@ -186,7 +186,7 @@ export const Experience = ({ experiences, expandedJob, setExpandedJob }) => {
         </div>
       </div>
 
-      <ChevronButton targetSection="education" />
+      <ChevronButton targetSection="skills" />
     </SectionWrapper>
   );
 };

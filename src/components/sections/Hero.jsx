@@ -43,7 +43,7 @@ export const Hero = ({ personalInfo, scrollY }) => (
             />
         </div>
         <div className="md:col-span-2 text-left">
-          <div className="space-y-4 text-m text-gray-700">
+          <div className="space-y-4 text-base text-gray-700">
             {personalInfo.about.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}

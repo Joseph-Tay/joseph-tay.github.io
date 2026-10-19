@@ -1,18 +1,38 @@
 export const skills = [
-  { 
-    category: "Analytics", 
-    items: ["Statistical Analysis", "Multivariate Regression Analysis", "Data Visualization", "Data Mining", "Statistical Validation", "Cross-Validation", "Design of Experiments", "Root Cause Analysis", "Pareto Analysis", "Control Charts", "AWS QuickSight", "Tableau", "Minitab"] 
+  {
+    category: "Product Management",
+    items: ["Product Roadmapping", "Backlog Prioritization", "PRDs", "OKRs", "User Research", "Agile/Scrum", "Stakeholder Management"]
   },
-  { 
-    category: "Data Science & Machine Learning", 
-    items: ["Python", "R", "SQL", "Jupyter Notebook", "Pandas", "Plotly", "NumPy", "A/B Testing", "Predictive Analytics", "Time Series Forecasting", "DeepAR", "AWS Sagemaker", "Statistical Modeling"] 
+  {
+    category: "Data & Machine Learning",
+    items: ["SQL", "Python", "R", "A/B Testing", "Time Series Forecasting", "AWS SageMaker", "LLM Prompt Engineering"]
   },
-  { 
-    category: "Engineering & Development", 
-    items: ["JavaScript", "React", "HTML/CSS", "Flutter/Dart", "Swift", "MySQL", "AutoCAD", "SAP MM/QM", "3D Printing", "Arena Simulations", "Visio", "Microsoft Project","Prompt Engineering"] 
+  {
+    category: "Tools & Automation",
+    items: ["Google Apps Script", "BigQuery", "JIRA", "Confluence", "Figma", "Power BI", "Git"]
   },
-  { 
-    category: "PM Frameworks & Methodologies", 
-    items: ["Lean Six Sigma", "Program Management", "Quality Management Systems", "FDA QSR", "Kanban", "5S Methodology", "Value Stream Mapping", "Process Optimization", "Cross-functional Leadership", "Operations Research"] 
+  {
+    category: "Operational Excellence",
+    items: ["Lean Six Sigma", "Process Optimization", "Value Stream Mapping", "Root Cause Analysis", "Design of Experiments", "Statistical Analysis"]
+  }
+];
+
+export const certifications = [
+  {
+    name: "Certified Scrum Master (CSM)",
+    issuer: "Scrum Alliance",
+    image: "/images/certs/csm.png",
+    link: "https://app.badgecert.com/public/badges/hnrlyjug"
+  },
+  {
+    name: "Certified Scrum Product Owner (CSPO)",
+    issuer: "Scrum Alliance",
+    image: "/images/certs/cspo.png",
+    link: "https://app.badgecert.com/public/badges/lykamafb"
+  },
+  {
+    name: "Lean Six Sigma Green Belt",
+    issuer: "Medtronic",
+    image: "/images/MDT_icon.png"
   }
 ];

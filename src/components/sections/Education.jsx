@@ -17,19 +17,22 @@ const ProjectCard = ({ project, index, isExpanded, onToggle }) => (
         </div>
       </div>
       
-      <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
-        isExpanded ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+      {/* grid-rows animates to full height without a max-height cap */}
+      <div className={`grid transition-all duration-500 ease-in-out ${
+        isExpanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
       }`}>
-        <div className="pt-4 border-t border-gray-100">
-          <h5 className="font-medium text-gray-900 mb-3">Project Details:</h5>
-          <ul className="space-y-2">
-            {project.details.map((detail, i) => (
-              <li key={i} className="text-gray-600 flex items-start">
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                {detail}
-              </li>
-            ))}
-          </ul>
+        <div className="overflow-hidden">
+          <div className="pt-4 border-t border-gray-100">
+            <h5 className="font-medium text-gray-900 mb-3">Project Details:</h5>
+            <ul className="space-y-2">
+              {project.details.map((detail, i) => (
+                <li key={i} className="text-gray-600 flex items-start">
+                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  {detail}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       
@@ -81,9 +84,9 @@ const CourseList = ({ courses, category, expandedCourse, setExpandedCourse }) =>
 export const Education = ({ education, expandedProject, setExpandedProject, expandedCourse, setExpandedCourse }) => (
   <SectionWrapper 
     id="education" 
-    bgColor="bg-blue-100" 
-    gradientTop="blue-100" 
-    gradientBottom="white"
+    bgColor="bg-white"
+    gradientTop="blue-100"
+    gradientBottom="blue-100"
   >
     <h2 className="text-4xl md:text-5xl font-thin mb-16 tracking-tight text-center text-blue-800">Education</h2>
     

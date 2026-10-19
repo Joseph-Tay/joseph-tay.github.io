@@ -4,7 +4,7 @@ export const experiences = [
     id: 1,
     title: "Research Assistant",
     company: "Purdue University | NASA",
-    website: "https://www.freshrealm.com/",
+    website: "https://engineering.purdue.edu/IE",
     logo: "/images/purdue_logo.png",
     icon: "/images/purdue_icon.png",
     period: "Jan 2016 - Dec 2016",
